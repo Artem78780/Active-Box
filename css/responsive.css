@@ -1,0 +1,320 @@
+@media (max-width: 2500px) {
+    .gallery a {
+        height: 500px;
+    }
+}
+@media (max-width: 2000px) {
+    .gallery a {
+        height: 297px;
+    }
+    .bg-carousel-reviews {
+        height: 500px;
+    }
+}
+@media (max-width: 1650px) {
+    .gallery a {
+        height: 291px;
+    }
+}
+
+@media (max-width: 1480px) {
+    .gallery a {
+        margin: 0;
+        max-height: 255px;
+
+    }
+    .owl-carousel-reviews {
+        padding: 50px 65px;
+    }
+}
+@media (max-width: 1350px) {
+    .gallery a {
+        height: 239px;
+
+    }
+
+    .box-team {
+        padding-bottom: 60px;
+    }
+}
+@media (max-width:1199px) {
+   
+    .bg-carousel-reviews {
+        display: none;
+    }
+    .owl-carousel-reviews {
+        padding: 85px 40px;
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+
+    .header__logo, .header__menu {
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    .nav {
+        justify-content: center;
+
+    }
+    .header__title {
+        margin-top: 100px;
+    }
+    .gallery a {
+        width: 50%;
+    }
+
+    .box-team {
+        padding-bottom: 40px;
+        max-width: 316px;
+        margin:0 auto;
+
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 12px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+    .social__fb,
+.social__twitter,
+.social__link {
+    font-size: 25px;
+}
+  
+}
+
+@media (max-width: 768px) {
+
+    .header__menu {
+        padding: 15px 0;
+        flex-wrap: nowrap;
+    }
+    .header__menu .nav-custom {
+        flex-wrap: nowrap;
+    }
+    .header__menu .nav-custom .nav-link {
+        padding: .5rem .5rem;
+    }
+
+    .header__title {
+        margin-top: 55px;
+    }
+    .title {
+        font-size: 39px;
+
+    }
+
+    .sub-title {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    /* Features */
+    .features {
+        margin: 70px 0;
+    }
+
+    .item {
+        margin: 25px 0;
+     }
+
+     .item .item__text {
+         max-width: 350px;
+         width: 100%;
+         margin: 0 auto;
+     }
+}
+@media (max-width: 600px) {
+    .gallery a {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+       .gallery a img{
+           height: auto;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+        object-fit: inherit;
+    }
+    .gallery a:nth-child(1),
+    .gallery a:nth-child(5) {
+        margin-left: auto;
+    }
+
+    .gallery a:nth-child(4),
+    .gallery a:nth-child(8) {
+        margin-right: auto;
+    }
+    /* Download */
+.download__title {
+    font-size: 18px;
+    padding: 0 40px;
+}
+.download__subtitle {
+    font-size: 10px;
+}
+.download__btn a {
+    font-size: 12px;
+    padding: 15px 75px;
+}
+}
+@media (max-width: 576px) {
+    .header__menu {
+      display: none;
+    }
+    .title {
+        font-size: 25px;
+
+    }
+
+    /* Hamburger */
+    .hamburger-menu {
+        display: block;
+    }
+    /* скрываем чекбокс */
+    #menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .menu__btn > span::checked,
+  .menu__btn > span::before::checked,
+  .menu__btn > span::after::checked {
+    background-color: red;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+ /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 54vh;
+    margin: 0;
+    padding: 150px 0;
+    list-style: none;
+    text-align: center;
+    background: url(../img/background.jpg) no-repeat
+    /* background-color: #ECEFF1; */
+    /* box-shadow: 1px 0px 6px rgba(0, 0, 0, .2); */
+  }
+  .menu__box li:hover .menu__box {
+      visibility: hidden;
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: 'ralewayregular';
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+      color: #e84545;
+    text-decoration: none;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+
+/* Carousel */
+.text-owl-carousel {
+    font-size: 25px;
+}
+.name-owl-carousel {
+    font-size: 11px;
+}
+
+/* Footer */
+.footer__location,
+.footer__social,
+.footer__about {
+    margin-bottom: 25px;
+}
+
+.footer .container {
+    padding-bottom: 20px;
+}
+
+.footer__copyright {
+    font-size: 12px;
+}
+}
+
+
+@media (max-width: 414px) {
+    .menu__box {
+        height: 65vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .menu__box {
+        height: 72vh;
+    }
+}
+@media (max-width: 320px) {
+    .menu__box {
+        height: 90vh;
+    }
+}
